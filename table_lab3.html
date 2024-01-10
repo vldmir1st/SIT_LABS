@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="main.js"></script>
         <title>R6 Wiki</title>
     </head>
-
     <body>
         <div class="container">
             <header>
@@ -17,7 +17,7 @@
             </header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html"> Главная</a></li>
                     <li><a href="operators.html">Оперативники</a></li>
                     <li><a href="news.html">Новости</a></li>
                     <li><a href="table_lab3.html">Таблица</a></li>
@@ -25,15 +25,17 @@
             </nav>
         </div>
 
-        <main>
-            <img src="new_season_logo.webp" alt="New season logo" width="800" />
-            <h3>
-                9 ноября была анонсирована новая операция под названием "Deep
-                Freeze"
-            </h3>
-            <a href="article.html"
-                ><strong><u>Подробнее</u></strong></a
-            >
-        </main>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID пользователя</th>
+                        <th>Название задачи</th>
+                        <th>Статус</th>
+                    </tr>
+                </thead>
+                <tbody class="rows"></tbody>
+            </table>
+        </section>
     </body>
 </html>
